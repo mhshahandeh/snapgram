@@ -8,18 +8,19 @@ import { Home } from "./_root/pages";
 
 const App = () => {
   return (
-    <Routes>
-      {/* public routes */}
-      <Route element={<AuthLayout />}>
-        <Route path="/sing-in" element={<SigninForm />} />
-        <Route path="/sing-up" element={<SignupForm />} />
-      </Route>
-
-      {/* private routes */}
-      <Route element={<RootLayout />}>
-        <Route index element={<Home />} />
-      </Route>
-    </Routes>
+    <main className="flex h-screen">
+      <Routes>
+        {/* public routes */}
+        <Route element={<AuthLayout />}>
+          <Route path="/sign-in" element={<SigninForm />} />
+          <Route path="/sign-up" element={<SignupForm />} />
+        </Route>
+        {/* private routes */}
+        <Route element={<RootLayout />}>
+          <Route index element={<Home />} />
+        </Route>
+      </Routes>
+    </main>
   );
 };
 
