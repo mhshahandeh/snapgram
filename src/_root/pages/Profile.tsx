@@ -2,7 +2,6 @@ import { GridPostList } from "@/components/shared/GridPostList";
 import Loader from "@/components/shared/Loader";
 import { useUserContext } from "@/context/AuthContext";
 import { useGetUserById } from "@/lib/react-query/queriesAndMutations";
-import React from "react";
 import {
   Link,
   Outlet,
