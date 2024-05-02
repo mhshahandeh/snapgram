@@ -2,6 +2,10 @@
 
 Snapgram is a private, open-source social media platform built with modern web technologies. This project is built using TypeScript, React, and Appwrite, and is designed to be a lightweight and performant a simple alternative exapmle to existing social media platforms.
 
+## Screenshots
+![Snapgram website screenshot](https://github.com/mhshahandeh/screenshots/blob/main/Screenshot_snapgram_sign-in.jpg?raw=true)
+![Snapgram website screenshot](https://github.com/mhshahandeh/screenshots/blob/main/Screenshot_snapgram.jpg?raw=true)
+
 ## Technologies Used
 
 - ReactJS
