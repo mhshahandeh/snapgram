@@ -1,30 +1,30 @@
-# React + TypeScript + Vite
+# Snapgram
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Snapgram is a private, open-source social media platform built with modern web technologies. This project is built using TypeScript, React, and Appwrite, and is designed to be a lightweight and performant a simple alternative exapmle to existing social media platforms.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- ReactJS
+- TypeScript
+- React Router Dom
+- React-Query
+- TailwindCSS
+- shadcn UI
+- Appwrite
+- Zod
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the Snapgram repository to your local machine.
+2. Create a new project on Appwrite and copy the project ID & start building the project's database.
+3. Install the dependencies using `npm install`.
+4. Start the development server using `npm run dev`.
+5. Open your web browser and navigate to `http://localhost:3000`.
 
-- Configure the top-level `parserOptions` property like this:
+## Configuration
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Snapgram can be configured using the `config.json` file located in the root of the project directory. This file contains a range of configuration options, including the Appwrite endpoint and project ID.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Contributing
+
+Snapgram is an open-source project, and we welcome contributions from the community. If you'd like to contribute, please fork the repository and submit a pull request with your changes.
