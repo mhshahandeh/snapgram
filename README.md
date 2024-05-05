@@ -23,7 +23,6 @@ Snapgram is a private, open-source social media platform built with modern web t
 2. Create a new project on Appwrite and copy the project ID & start building the project's database.
 3. Install the dependencies using `npm install`.
 4. Start the development server using `npm run dev`.
-5. Open your web browser and navigate to `http://localhost:3000`.
 
 ## Configuration
 
