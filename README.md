@@ -1,4 +1,4 @@
-# Snapgram
+# Snapgram [(Live Demo)](https://snapgram.pages.dev/)
 
 Snapgram is a private, open-source social media platform built with modern web technologies. This project is built using TypeScript, React, and Appwrite, and is designed to be a lightweight and performant a simple alternative exapmle to existing social media platforms.
 
