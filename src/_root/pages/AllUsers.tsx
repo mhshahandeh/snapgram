@@ -1,15 +1,13 @@
 import Loader from "@/components/shared/Loader";
 import UserCard from "@/components/shared/UserCard";
-import { useToast } from "@/components/ui/use-toast";
 import { useGetUsers } from "@/lib/react-query/queriesAndMutations";
 import { Models } from "appwrite";
 
 const AllUsers = () => {
-  const { toast } = useToast();
   const { data: users, isLoading, isError } = useGetUsers();
 
   if (isError) {
-    return toast({ title: "Something went wrong." });
+    throw new Error("Something went wrong");
   }
   return (
     <div className="common-container">

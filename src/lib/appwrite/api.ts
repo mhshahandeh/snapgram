@@ -26,7 +26,6 @@ export async function createUserAccount(user: INewUser) {
     return newUser;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -48,7 +47,6 @@ export async function saveUserToDB(user: {
     return newUser;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -59,7 +57,6 @@ export async function signInAccount(user: { email: string; password: string }) {
     return session;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -78,7 +75,6 @@ export async function getCurrentUser() {
     return currentUser.documents[0];
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -89,7 +85,6 @@ export async function signOutAccount() {
     return session;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -134,7 +129,6 @@ export async function createPost(post: INewPost) {
     return newPost;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -149,7 +143,6 @@ export async function uploadFile(file: File) {
     return uploadedFile;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -167,7 +160,6 @@ export function getFilePreview(fileId: string) {
     return fileUrl;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -178,7 +170,6 @@ export async function deleteFile(fileId: string) {
     return { status: "ok" };
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -195,7 +186,6 @@ export async function getRecentPosts() {
     return posts;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -215,7 +205,6 @@ export async function likePost(postId: string, likesArray: string[]) {
     return updatedPost;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -236,7 +225,6 @@ export async function savePost(postId: string, userId: string) {
     return updatedPost;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -253,7 +241,6 @@ export async function deleteSavedPost(savedRecordId: string) {
     return { status: "Ok" };
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -268,7 +255,6 @@ export async function getPostById(postId: string) {
     return post;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -322,7 +308,6 @@ export async function updatePost(post: IUpdatePost) {
     return updatedPost;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -339,7 +324,6 @@ export async function deletePost(postId: string, imageId: string) {
     return { status: "ok" };
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -361,7 +345,6 @@ export async function getInfinitePosts({ pageParam }: { pageParam: number }) {
     return posts;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -378,7 +361,6 @@ export async function searchPosts(searchTerm: string) {
     return posts;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -400,7 +382,6 @@ export async function getUsers(limit?: number) {
     return users;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -417,7 +398,6 @@ export async function getUserById(userId: string) {
     return user;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
 
@@ -448,6 +428,7 @@ export async function updateUser(user: IUpdateUser) {
     const updatedUser = await databases.updateDocument(
       appwriteConfig.databaseId,
       appwriteConfig.userCollectionId,
+      //@ts-ignore
       user.userId,
       {
         name: user.name,
@@ -475,6 +456,5 @@ export async function updateUser(user: IUpdateUser) {
     return updatedUser;
   } catch (error) {
     console.log(error);
-    return error;
   }
 }
